@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Swiper</title>
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <style>
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+        .swiper-slide {
+            display: flex;
+            height: 400px;
+            background: #ccc;
+            justify-content: center;
+            align-items: center;
+            font: 88px Arial
+        }
+        
+        .swiper-pagination-bullet-active {
+            background: #666;
+        }
+    </style>
+</head>
+<body>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./images/photo01.jpg" alt=""></div>
+                <div class="swiper-slide">2</div>
+                <div class="swiper-slide">3</div>
+                <div class="swiper-slide">4</div>
+                <div class="swiper-slide">5</div>
+                <div class="swiper-slide">6</div>
+                <div class="swiper-slide">7</div>
+                <div class="swiper-slide">8</div>
+            </div>
+            <div class="swiper-pagination"></div>    
+        </div>
+
+    <script src="./js/swiper.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            pagination:{
+                el: '.swiper-pagination',
+                autoHeight: true
+            }
+        })
+    </script>
+</body>
+</html>
