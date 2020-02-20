@@ -67,8 +67,8 @@ body{
     margin-bottom: 6px;
   }
 
-  #vid{
-    margin-left: 26%;
+  #video{
+    display: flex;
   }
 
   #mal{
@@ -131,3 +131,9 @@ p{
   font-weight: bold;
   text-shadow: 0 0 10px black;
 }
+
+#oi2{
+  margin-top: 2%;
+}
+
+
